@@ -1,15 +1,27 @@
-# WebRTC Video Conference Tutorial
+# WebRTC
 
-This tutorial is divided in three versions:
+执行代码
 
-* Plain WebRTC (One to One)
-* WebRTC using Media Server (Many to Many)
-* WebRTC using CPaaS (Many to Many)
+```
+node server.js
+```
 
-Each version lives on its own branch so you can checkout to each one to review them.
+浏览器打开 http://localhost:3000/
 
-    git checkout webrtc     // for one to one webrtc tutorial
-    git checkout kurento    // for webrtc using media server
-    git checkout tokbox     // for webrtc using CPaaS
 
-As you can see we're using [Kurento](http://www.kurento.org/) as media server and [Tokbox](https://tokbox.com/) as CPaaS service.
+
+项目Demo：https://www.545356.xyz
+
+
+
+参考链接
+
+RTC教程：
+
+https://github.com/RTC-Developer/WebRTC-knowledge-base?tab=readme-ov-file
+
+https://webrtc.org.cn/20180729-webrtc-nattraversal-signaling/
+
+https://webrtc.org.cn/webrtc-tutorial-1-setup-signaling/
+
+https://webrtc.org.cn/webrtc-tutorial-2-signaling-stun-turn/
