@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head></head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebRTC</title>
+    <style>
+        .main-title{
+            height: 50vh;
+            text-align: center;
+            margin: 0;
+            line-height: 50vh;
+            font-size: 40px;
+        }
+        .roomItem{
+            width:100px;
+            height:80px;
+            position: relative;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .oneblock {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 80px;
+            background-color: #d6f2f3;
+            color: #034f52;
+            border: 1px solid #034f52;
+            display: none;
+            line-height: 80px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .oneblock.active{
+            border: 1px solid #f78651;
+        }
+        #goRoom{
+            background-color: #26b7bc;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            text-align: center;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="main-title">WebRTC</h1>
+
+    <div id="selectRoom" style="text-align: center;">
+        <button id="goRoom">进入聊天室</button>
+    </div>
+
+    <div id="consultingRoom" style="display: flex;flex-wrap: wrap;">
+        <div class="roomItem">
+            <audio id="localVideo" autoplay width="100px" height="100px"></audio>
+            <div class="oneblock" id="localName">1</div>
+        </div>
+        <div class="roomItem">
+            <audio id="remoteVideo1" autoplay width="100px" height="100px"></audio>
+            <div class="oneblock" id="remoteName1">2</div>
+        </div>
+        <div class="roomItem">
+            <audio id="remoteVideo2" autoplay width="100px" height="100px"></audio>
+            <div class="oneblock" id="remoteName2">3</div>
+        </div>
+        <div class="roomItem">
+            <audio id="remoteVideo3" autoplay width="100px" height="100px"></audio>
+            <div class="oneblock" id="remoteName3">4</div>
+        </div>
+    </div>
+
+    <!-- <script src="socket.io.js"></script> -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/socket.io/4.7.5/socket.io.min.js"></script>
+    <script src="client.js"></script>
+</body>
